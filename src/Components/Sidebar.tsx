@@ -1,5 +1,5 @@
 import React, { ReactText } from 'react'
-import { VStack, Stack, Link, FlexProps, Flex, Icon } from '@chakra-ui/react'
+import {  Stack, Link, FlexProps, Flex, Icon } from '@chakra-ui/react'
 import { IconType } from 'react-icons'
 import { HiBell, HiTemplate, HiHand } from 'react-icons/hi'
 
@@ -55,7 +55,7 @@ const NavItem = ({ icon, children, ...rest }: NavItemProps) => {
 
 const Sidebar = () => {
   return (
-    <VStack px="2rem" py="1rem" align="flex-start">
+    <Flex px="2rem" py="1rem" align="flex-start" position="fixed">
       <Stack>
         {LinkItems.map((link) => (
           <NavItem key={link.name} icon={link.icon}>
@@ -63,7 +63,7 @@ const Sidebar = () => {
           </NavItem>
         ))}
       </Stack>
-    </VStack>
+    </Flex>
   )
 }
 
