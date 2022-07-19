@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   Heading,
   HStack,
@@ -7,10 +7,11 @@ import {
   Box,
   Stack,
   Flex,
-  Button,
-} from '@chakra-ui/react'
-import reactImg from '../Assets/reactImg.jpg'
-import data from '../Data/ExamDetails.json'
+} from "@chakra-ui/react";
+import reactImg from "../Assets/reactImg.jpg";
+import data from "../Data/ExamDetails.json";
+import { Link as Route } from "react-router-dom";
+
 const ExamDetails = () => {
   return (
     <>
@@ -62,11 +63,11 @@ const ExamDetails = () => {
               <Box px="1rem">{item.Points}</Box>
             </HStack>
           </>
-        )
+        );
       })}
     </>
-  )
-}
+  );
+};
 
 const QuizHome = () => {
   return (
@@ -110,21 +111,23 @@ const QuizHome = () => {
             click the "Start" button. When finished, click the "Submit " button.
           </Text>
         </Stack>
-        <HStack justifyContent="flex-start" px="2rem" mb="1rem" w="2rem">
-          <Button
-            bg="#8692A6"
-            color="#fff"
-            px="4rem"
-            py="1.5rem"
-            borderRadius="1.875rem"
-            fontSize="1.25rem"
-          >
+        <HStack
+          justifyContent="flex-start"
+          mb="1rem"
+          w="2rem"
+          bg="#8692A6"
+          px="4rem"
+          py="1.5rem"
+          borderRadius="1.875rem"
+          fontSize="1.25rem"
+        >
+          <Route color="#fff" to="questions">
             Start Quiz
-          </Button>
+          </Route>
         </HStack>
       </Flex>
     </>
   );
-}
+};
 
-export default QuizHome
+export default QuizHome;

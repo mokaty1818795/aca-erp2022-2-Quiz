@@ -1,0 +1,38 @@
+{
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "SimonSiefke.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "workbench.editorAssociations": {
+    "*.bak": "default"
+  },
+  "window.zoomLevel": 2,
+  "files.autoSave": "afterDelay",
+  "editor.formatOnType": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "files.autoSaveDelay": 100,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "git.enableSmartCommit": true,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "editor.fontSize": 12,
+  "editor.autoIndent": "advanced",
+  "workbench.colorTheme": "Night Owl",
+  "workbench.preferredDarkColorTheme": "Night Owl",
+  "workbench.preferredHighContrastColorTheme": "Night Owl",
+  "workbench.tree.indent": 4,
+  "editor.fontFamily": "consolas",
+  "diffEditor.codeLens": true,
+  "diffEditor.wordWrap": "off",
+  "workbench.iconTheme": "material-icon-theme",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "SimonSiefke.prettier-vscode"
+  }
+}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   HStack,
   Link,
@@ -6,9 +6,9 @@ import {
   Button,
   Input,
   InputGroup,
-} from '@chakra-ui/react'
+} from "@chakra-ui/react";
 
-import avatarImg from '../Assets/avatarImg.svg'
+import avatarImg from "../Assets/avatarImg.svg";
 const Topnav = () => {
   return (
     <>
@@ -51,7 +51,7 @@ const Topnav = () => {
         </HStack>
       </HStack>
     </>
-  )
-}
+  );
+};
 
-export default Topnav
+export default Topnav;
