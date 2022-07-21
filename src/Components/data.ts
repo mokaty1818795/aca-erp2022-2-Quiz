@@ -8,6 +8,7 @@ export const questions = [
         { answerText: "clone", isCorrect: true },
         { answerText: "import", isCorrect: false },
       ],
+      answer:"clone"
     },
     {
       questionText:
@@ -18,6 +19,7 @@ export const questions = [
         { answerText: "Access Denied", isCorrect: false },
         { answerText: "500", isCorrect: false },
       ],
+      answer:"Rejected"
     },
     {
       questionText:
@@ -28,6 +30,7 @@ export const questions = [
         { answerText: "the trunk", isCorrect: false },
         { answerText: "the root", isCorrect: false },
       ],
+      answer:"a branch"
     },
     {
       questionText:
@@ -38,6 +41,7 @@ export const questions = [
         { answerText: "HEAD pointer", isCorrect: false },
         { answerText: "a branch", isCorrect: true },
       ],
+      answer:"a branch"
     },
     {
       questionText:
@@ -48,6 +52,7 @@ export const questions = [
         { answerText: "export ", isCorrect: false },
         { answerText: "pull", isCorrect: true },
       ],
+       answer:"pull"
     },
     {
       questionText: "The Git clone command does which of the following? ",
@@ -60,6 +65,7 @@ export const questions = [
         { answerText: "Commits a new branch ", isCorrect: false },
         { answerText: "a and b", isCorrect: true },
       ],
+      answer:"a and b"
     },
     {
       questionText:
@@ -70,6 +76,7 @@ export const questions = [
         { answerText: "merge ", isCorrect: false },
         { answerText: "checkout ", isCorrect: true },
       ],
+      answer:"checkout"
     },
     {
       questionText:
@@ -80,6 +87,7 @@ export const questions = [
         { answerText: "Commit object ", isCorrect: false },
         { answerText: "HEAD pointer ", isCorrect: false },
       ],
+       answer:"Body element"
     },
     {
       questionText:
@@ -90,6 +98,7 @@ export const questions = [
         { answerText: "checkout", isCorrect: false },
         { answerText: "clone", isCorrect: true },
       ],
+       answer: "clone"
     },
     {
       questionText: "What is a state in React?",
@@ -99,6 +108,7 @@ export const questions = [
         { answerText: "A permanent storage", isCorrect: false },
         { answerText: "Internal storage of the component", isCorrect: true },
       ],
+      answer: "Internal storage of the component"
     },
     {
       questionText:
@@ -109,6 +119,7 @@ export const questions = [
         { answerText: "SetState", isCorrect: false },
         { answerText: "Props", isCorrect: true },
       ],
+       answer: "Props"
     },
     {
       questionText: "What are the two ways to handle data in React?",
@@ -118,6 +129,7 @@ export const questions = [
         { answerText: "State & Services", isCorrect: false },
         { answerText: "State & Props", isCorrect: true },
       ],
+      answer: "State & Props"
     },
     {
       questionText: "Which of the following is the correct name of React.js?",
@@ -127,6 +139,7 @@ export const questions = [
         { answerText: "Reactjs", isCorrect: false },
         { answerText: "All of The above", isCorrect: true },
       ],
+      answer: "All of The above"
     },
     {
       questionText: "how many countries inWhat does ES6 stand for? ",
@@ -136,6 +149,7 @@ export const questions = [
         { answerText: "EJavaScript 6", isCorrect: false },
         { answerText: "ECMAJavaScript 6", isCorrect: true },
       ],
+       answer: "ECMAScript 6"
     },
     {
       questionText:
@@ -146,6 +160,7 @@ export const questions = [
         { answerText: "Inside the js/components/", isCorrect: true },
         { answerText: "4.	Inside the external/components/", isCorrect: false },
       ],
+      answer: "Inside the js/components/"
     },
     {
       questionText:
@@ -156,6 +171,7 @@ export const questions = [
         { answerText: "All Of The Above", isCorrect: true },
         { answerText: "None Of The Above", isCorrect: false },
       ],
+      answer: "All Of The Above"
     },
     {
       questionText:
@@ -166,6 +182,7 @@ export const questions = [
         { answerText: "render", isCorrect: false },
         { answerText: "All Of The Above", isCorrect: false },
       ],
+      answer: "render Component"
     },
     {
       questionText:
@@ -182,6 +199,7 @@ export const questions = [
         },
         { answerText: "None", isCorrect: false },
       ],
+      answer: "The source of truth is DOM"
     },
     {
       questionText:
@@ -192,6 +210,7 @@ export const questions = [
         { answerText: "None Of The Above", isCorrect: false },
         { answerText: "All of above", isCorrect: false },
       ],
+       answer: "Virtual DOM"
     },
     {
       questionText:
@@ -202,6 +221,7 @@ export const questions = [
         { answerText: "It will be rendered as disabled", isCorrect: false },
         { answerText: "None Of The Above", isCorrect: true },
       ],
+      answer: "It will be rendered as enabled"
     },
     {
       questionText:
@@ -219,6 +239,7 @@ export const questions = [
         },
         { answerText: "None", isCorrect: false },
       ],
+      answer: "It will re-render the component"
     },
     {
       questionText: "Who developed Typescript?",
@@ -228,6 +249,7 @@ export const questions = [
         { answerText: "Stanlacke", isCorrect: false },
         { answerText: "None", isCorrect: false },
       ],
+       answer: "Anders Hejlsberg"
     },
     {
       questionText: "TypeScript was introduced in the year of",
@@ -237,6 +259,7 @@ export const questions = [
         { answerText: "2013", isCorrect: false },
         { answerText: "2020", isCorrect: false },
       ],
+       answer: "2012"
     },
     {
       questionText: "What are the built-in types in Typescript?",
@@ -246,6 +269,7 @@ export const questions = [
         { answerText: "Null type", isCorrect: false },
         { answerText: "All OF The Above", isCorrect: true },
       ],
+      answer: "All OF The Above"
     },
     {
       questionText: "Can a typescript be installed or managed through?",
@@ -255,6 +279,7 @@ export const questions = [
         { answerText: "Nmp", isCorrect: false },
         { answerText: "Tag", isCorrect: true },
       ],
+      answer: "Tag"
     },
     {
       questionText: "What are different components of TypeScript?",
@@ -264,6 +289,7 @@ export const questions = [
         { answerText: "Language Service", isCorrect: false },
         { answerText: "All Of The Above", isCorrect: true },
       ],
+      answer: "All Of The Above"
     },
     {
       questionText: "Which object-oriented terms are supported by TypeScript?",
@@ -273,6 +299,7 @@ export const questions = [
         { answerText: "Member functions", isCorrect: false },
         { answerText: "ALL Of The Above", isCorrect: true },
       ],
+      answer: "All Of The Above"
     },
     {
       questionText:
@@ -283,6 +310,7 @@ export const questions = [
         { answerText: "Duck", isCorrect: false },
         { answerText: "All Of The Above", isCorrect: true },
       ],
+      answer: "All Of The Above"
     },
     {
       questionText: "Which is not true about typescript?",
@@ -292,6 +320,7 @@ export const questions = [
         { answerText: "It does support static data types", isCorrect: true },
         { answerText: "Typescript is case sensitive", isCorrect: false },
       ],
+       answer: "It does support static data types"
     },
     {
       questionText: "….are the way to organize code in typescript.",
@@ -301,6 +330,7 @@ export const questions = [
         { answerText: "Method", isCorrect: false },
         { answerText: "Arrow", isCorrect: false },
       ],
+      answer: "All Of The Above"
     },
     {
       questionText: " What are the disadvantages of TypeScript?",
@@ -313,6 +343,7 @@ export const questions = [
         },
         { answerText: "All Of The Above", isCorrect: true },
       ],
+      answer: "All Of The Above"
     },
     {
       questionText: "Which of the following are the advantages of React.js?",
@@ -333,6 +364,7 @@ export const questions = [
         },
         { answerText: "All Of The Above", isCorrect: true },
       ],
+      answer: "All Of The Above"
     },
     {
       questionText:
@@ -343,6 +375,7 @@ export const questions = [
         { answerText: "npm install -f create-react-app", isCorrect: false },
         { answerText: "install -g create-react-app", isCorrect: false },
       ],
+      answer: "npm install -g create-react-app"
     },
     {
       questionText:
@@ -353,15 +386,17 @@ export const questions = [
         { answerText: "Object", isCorrect: false },
         { answerText: "DataObject", isCorrect: false },
       ],
+      answer: "Class"
     },
     {
       questionText: "What is the default port where webpack-server runs?",
       answerOptions: [
-        { answerText: "3000", isCorrect: false },
+        { answerText: "3000", isCorrect: true },
         { answerText: "9000", isCorrect: false },
         { answerText: "2000", isCorrect: false },
-        { answerText: "1000", isCorrect: true },
+        { answerText: "1000", isCorrect: false },
       ],
+      answer: "3000"
     },
     {
       questionText:
@@ -372,6 +407,7 @@ export const questions = [
         { answerText: "3", isCorrect: false },
         { answerText: "4", isCorrect: false },
       ],
+      answer: "1"
     },
     {
       questionText:
@@ -382,6 +418,7 @@ export const questions = [
         { answerText: "Using the Array.map() method", isCorrect: true },
         { answerText: "With a for/while loop", isCorrect: false },
       ],
+       answer: "Using the Array.map() method"
     },
     {
       questionText: " How many ways of defining your variables in ES6?",
@@ -391,6 +428,7 @@ export const questions = [
         { answerText: "4", isCorrect: false },
         { answerText: "5", isCorrect: true },
       ],
+      answer: "3"
     },
     {
       questionText: " Which of the following method is not a part of ReactDOM?",
@@ -400,6 +438,7 @@ export const questions = [
         { answerText: "ReactDOM.createPortal()", isCorrect: false },
         { answerText: "ReactDOM.findDOMNode()", isCorrect: false },
       ],
+      answer: "ReactDOM.destroy()"
     },
     {
       questionText:
@@ -410,6 +449,7 @@ export const questions = [
         { answerText: "By using the default property", isCorrect: false },
         { answerText: "It is assigned automatically.", isCorrect: false },
       ],
+      answer: "By using the defaultValue property"
     },
     {
       questionText:
@@ -426,6 +466,7 @@ export const questions = [
         },
         { answerText: "None of the above.", isCorrect: false },
       ],
+       answer: "The source of truth is a component state."
     },
     {
       questionText:
@@ -439,6 +480,7 @@ export const questions = [
         { answerText: "It is used to install dependencies.", isCorrect: false },
         { answerText: "None", isCorrect: false },
       ],
+      answer: "It is used to create a new React app."
     },
     {
       questionText:
@@ -449,6 +491,7 @@ export const questions = [
         { answerText: "Do not require to be unique.", isCorrect: false },
         { answerText: "None", isCorrect: false },
       ],
+       answer: "Unique among the siblings only"
     },
     {
       questionText: " React is a _________.",
@@ -458,6 +501,7 @@ export const questions = [
         { answerText: "jQuery", isCorrect: false },
         { answerText: "Web Server", isCorrect: false },
       ],
+      answer: "JavaScript Library"
     },
     {
       questionText: "Which ReactJS function renders HTML to the web page?",
@@ -467,6 +511,7 @@ export const questions = [
         { answerText: "renders()", isCorrect: false },
         { answerText: "ReactDOM.renders()", isCorrect: false },
       ],
+        answer: "ReactDOM.render()"
     },
     {
       questionText: "JSX stands for _____.",
@@ -476,6 +521,7 @@ export const questions = [
         { answerText: "JavaScript XML", isCorrect: true },
         { answerText: "JavaScript and AngularJS", isCorrect: false },
       ],
+      answer: "JavaScript XML"
     },
 
      {
@@ -486,6 +532,7 @@ export const questions = [
         { answerText: "new()", isCorrect: true },
         { answerText: "maps()", isCorrect: false },
       ],
+       answer: "new() "
     },
      {
       questionText: "What is the correct syntax to write expression in JSX?",
@@ -495,6 +542,7 @@ export const questions = [
         { answerText: "{{ expression }}", isCorrect: false },
         { answerText: "_expression", isCorrect: false },
       ],
+        answer: "{ expression } "
     },
 
      {
@@ -505,6 +553,7 @@ export const questions = [
         { answerText: "Props are used to returns multiple values from the function", isCorrect: false },
         { answerText: "All The Above", isCorrect: false },
       ],
+       answer: "Props are arguments passed into React components "
     },
     
      {
@@ -515,5 +564,6 @@ export const questions = [
         { answerText: "Angular Code in React", isCorrect: false },
         { answerText: "jQuery in React", isCorrect: false },
       ],
+      answer: "HTML in React "
     },
   ];
