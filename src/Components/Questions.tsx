@@ -18,7 +18,6 @@ const ExamDetails = () => {
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
   const [feeback, setFeedback] = useState("");
-  const [disableBtn, setDisableBtn] = useState(false);
   const [finish, setFinish] = useState("Next");
 
   const handleAnswerButtonClick = (isCorrect: boolean) => {
@@ -125,11 +124,7 @@ const ExamDetails = () => {
           <HStack py="2rem" px="2rem">
             <Stack>
               <Button
-                disabled={disableBtn}
                 onClick={() => {
-                  if (currentQuestion === 1) {
-                    setDisableBtn(true);
-                  }
                   previousQuestion();
                 }}
               >
