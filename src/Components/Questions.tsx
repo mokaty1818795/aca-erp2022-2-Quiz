@@ -7,10 +7,11 @@ import {
   Button,
   Radio,
   RadioGroup,
+  Center,
 } from "@chakra-ui/react";
-import { useState, useEffect } from "react";
-import { questions } from "./data";
-import Summary from "./Summary";
+import { useState } from "react";
+import { questions } from "../Data/data";
+import { useNavigate } from "react-router-dom";
 
 const ExamDetails = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -28,7 +29,7 @@ const ExamDetails = () => {
 
   const anotherQuestion = () => {
     const nextQuetions = currentQuestion + 1;
-    if (nextQuetions === questions.length) {
+    if (nextQuetions === 49) {
       setFinish("Submit");
     }
     if (nextQuetions < questions.length) {
@@ -48,16 +49,14 @@ const ExamDetails = () => {
 
     if (previous < questions.length) {
       setCurrentQuestion(previous);
-    } else {
-      setShowScore(true);
-      if (score < 500) {
-        setFeedback("Sorry Exam Failed");
-      } else {
-        setFeedback(" Congrats You Have Passed Your Quiz");
-      }
     }
   };
 
+  const navigate = useNavigate();
+
+  const navigaetToSummary = () => {
+    navigate("/summary");
+  };
   return (
     <>
       {showScore ? (
@@ -72,6 +71,7 @@ const ExamDetails = () => {
             You Scored {score}/1000 Points
           </Box>
           <Box
+            py="1rem"
             fontSize="1.4375rem"
             color="#696F79"
             fontWeight={600}
@@ -80,7 +80,9 @@ const ExamDetails = () => {
           >
             {feeback}
           </Box>
-          <Summary />
+          <Button py="1rem" onClick={navigaetToSummary}>
+            Summary
+          </Button>
         </Stack>
       ) : (
         <>
@@ -155,6 +157,7 @@ const Questions = () => {
   return (
     <>
       <Flex
+        mt="10rem"
         ml="20rem"
         zIndex="modal"
         boxShadow="lg"
@@ -162,15 +165,11 @@ const Questions = () => {
         flexDirection="column"
         borderRadius="1.875rem"
       >
-        <HStack py="1.5rem" px="1rem" justifyContent="space-between">
+        <Center>
           <Stack>
-            <Heading color="#696F79">React Quiz</Heading>
+            <Heading color="#696F79">Git Quiz</Heading>
           </Stack>
-          <HStack>
-            <Heading color="#696F79">Time:</Heading>
-            <Heading color="#696F79">29:00mins</Heading>
-          </HStack>
-        </HStack>
+        </Center>
         <HStack spacing={20} alignItems="center">
           <HStack direction="column" spacing={20}>
             <Stack direction="column" py="2rem">

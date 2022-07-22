@@ -1,6 +1,15 @@
-import { HStack, Box, Stack, Button } from "@chakra-ui/react";
+import {
+  HStack,
+  Box,
+  Stack,
+  Button,
+  RadioGroup,
+  Radio,
+  Badge,
+  Container,
+} from "@chakra-ui/react";
 import { useState } from "react";
-import { questions } from "./data";
+import { questions } from "../Data/data";
 const Summary = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [disableBtn, setDisableBtn] = useState(false);
@@ -25,63 +34,69 @@ const Summary = () => {
 
   return (
     <>
-      <HStack justifyContent="space-between" px="2rem">
-        <Stack>
-          <Button
-            disabled={disableBtn}
-            onClick={() => {
-              if (currentQuestion === 1) {
-                setDisableBtn(true);
-              }
-              previousQuestion();
-            }}
-          >
-            Previous
-          </Button>
-        </Stack>
+      <Container mt="10rem" maxWidth="container.xl">
+        <HStack justifyContent="space-between" px="2rem">
+          <Stack>
+            <Button
+              disabled={disableBtn}
+              onClick={() => {
+                if (currentQuestion === 1) {
+                  setDisableBtn(true);
+                }
+                previousQuestion();
+              }}
+            >
+              Previous
+            </Button>
+          </Stack>
 
-        <Stack>
-          <Button
-            onClick={() => {
-              anotherQuestion();
-            }}
+          <Stack>
+            <Button
+              onClick={() => {
+                anotherQuestion();
+              }}
+            >
+              Next
+            </Button>
+          </Stack>
+        </HStack>
+        <Stack px={8} py="1rem">
+          <Box
+            fontSize="1.4375rem"
+            color="#696F79"
+            fontWeight={600}
+            lineHeight="2.125rem"
           >
-            Next
-          </Button>
+            {currentQuestion + 1} /{questions.length}
+          </Box>
         </Stack>
-      </HStack>
-      <Stack px={8}>
         <Box
           fontSize="1.4375rem"
           color="#696F79"
           fontWeight={600}
           lineHeight="2.125rem"
+          px={8}
+          py="2rem"
         >
-          Question {currentQuestion + 1} /{questions.length}
+          {questions[currentQuestion].questionText}
+          <Badge bg="#00A878" px="1rem">
+            <Box>Answer {questions[currentQuestion].answer}</Box>
+          </Badge>
         </Box>
-      </Stack>
-      <Box
-        fontSize="1.4375rem"
-        color="#696F79"
-        fontWeight={600}
-        lineHeight="2.125rem"
-        px={8}
-        py="2rem"
-      >
-        {questions[currentQuestion].questionText}
-      </Box>
-      <Stack px={8}>
-        {questions[currentQuestion].answerOptions.map(
-          (answerOptions: { isCorrect: boolean; answerText: string }) => (
-            <>
-              <Button px="2rem" py="2rem" disabled={true}>
-                {answerOptions.answerText}
-              </Button>
-            </>
-          )
-        )}
-        <Box>{questions[currentQuestion].answer}</Box>
-      </Stack>
+        <Stack px={8}>
+          {questions[currentQuestion].answerOptions.map(
+            (answerOptions: { isCorrect: boolean; answerText: string }) => (
+              <>
+                <RadioGroup>
+                  <Radio isDisabled fontStyle="bold" value={answerOptions.answerText}>
+                    {answerOptions.answerText}
+                  </Radio>
+                </RadioGroup>
+              </>
+            )
+          )}
+        </Stack>
+      </Container>
     </>
   );
 };
