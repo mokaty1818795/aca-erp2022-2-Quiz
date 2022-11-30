@@ -79,7 +79,7 @@ const ExamDetails = () => {
           >
             {feeback}
           </Box>
-          <Button py="1rem" onClick={navigaetToSummary}>
+          <Button py="1rem" bg="blue.400" onClick={navigaetToSummary}>
             Summary
           </Button>
         </Stack>
@@ -124,6 +124,7 @@ const ExamDetails = () => {
           <HStack py="2rem" px="2rem">
             <Stack>
               <Button
+                bg="blue.400"
                 onClick={() => {
                   previousQuestion();
                 }}
@@ -134,6 +135,8 @@ const ExamDetails = () => {
 
             <Stack>
               <Button
+                bg="gray.400"
+                color="white"
                 onClick={() => {
                   anotherQuestion();
                 }}
